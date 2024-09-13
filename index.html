@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Nerko+One&display=swap" rel="stylesheet">
+            <title>Título da História</title>
+        </head>
+    <body>
+        <main>
+            <div class="passo ativo" id="passo-1">
+                <p>Renata, aproveitando o dia de sol, resolve nadar no mar enquanto sua família monta o acampamento na praia. No entanto, as correntes marítimas estão fortes, e ela precisa tomar uma decisão.</p>
+                <button class="btn-proximo" data-proximo="2A">Nadar contra a correnteza</button>
+                <button class="btn-proximo" data-proximo="2B">Gritar por ajuda</button>
+            </div>
+            
+            <div class="passo" id="passo-2A">
+                <p>Renata luta contra a correnteza, mas se cansa rapidamente. Ela continua tentando nadar, tentando se aproximar da praia.</p>
+                <button class="btn-proximo" data-proximo="3A">Nadar mais forte</button>
+                <button class="btn-proximo" data-proximo="3B">Desistir e boiar para economizar energia</button>
+            </div>
+            
+            <div class="passo" id="passo-2B">
+                <p>Renata chama por ajuda, mas sua família e outras pessoas não a escutam imediatamente. Ela continua gritando por ajuda, mas está exausta.</p>
+                <button class="btn-proximo" data-proximo="3C">Nadar até Renata para ajudá-la</button>
+                <button class="btn-proximo" data-proximo="3D">Chamar por socorro profissional (salva-vidas)</button>
+            </div>
+            
+            <div class="passo" id="passo-3A">
+                <p>Renata finalmente consegue lutar contra a corrente e um salva-vidas a vê e nada em sua direção.</p>
+                <button class="btn-proximo" data-proximo="4A">Seguir o conselho e descansar na praia</button>
+                <button class="btn-proximo" data-proximo="4B">Voltar ao acampamento</button>
+            </div>
+            
+            <div class="passo" id="passo-3B">
+                <p>Ela flutua, esperando que alguém a veja. Um salva-vidas percebe e corre para ajudá-la.</p>
+                <button class="btn-proximo" data-proximo="4A">Agradecer e descansar na praia</button>
+                <button class="btn-proximo" data-proximo="4C">Decidir ir para o hotel</button>
+            </div>
+            
+            <div class="passo" id="passo-3C">
+                <p>Um familiar se aproxima dela para tentar ajudá-la, mas ambos acabam presos na correnteza.</p>
+                <button class="btn-proximo" data-proximo="4D">Ambos aguardam ajuda</button>
+                <button class="btn-proximo" data-proximo="4E">O familiar tenta nadar de volta com Renata</button>
+            </div>
+            
+            <div class="passo" id="passo-3D">
+                <p>Os salva-vidas são alertados e nadam rapidamente até Renata, conseguindo tirá-la da água antes que ela se machuque.</p>
+                <button class="btn-proximo" data-proximo="4F">Seguir para o hotel e descansar</button>
+                <button class="btn-proximo" data-proximo="4A">Ficar mais um pouco na praia</button>
+            </div>
+            
+            <div class="passo" id="passo-4A">
+                <p>Renata decide relaxar e aproveitar o resto do dia na praia, agora mais consciente dos perigos.</p>
+                <button class="btn-proximo" data-proximo="5A">Almoçar em uma barraca de praia</button>
+                <button class="btn-proximo" data-proximo="5B">Fazer o almoço no acampamento</button>
+            </div>
+            
+            <div class="passo" id="passo-4B">
+                <p>Renata decide voltar para o acampamento e ajudar na preparação do almoço.</p>
+                <button class="btn-proximo" data-proximo="5C">Cozinhar uma refeição simples</button>
+                <button class="btn-proximo" data-proximo="5D">Cozinhar algo mais elaborado</button>
+            </div>
+            
+            <div class="passo" id="passo-4C">
+                <p>Renata e a família vão para o hotel descansar, ainda abalados pelo incidente.</p>
+                <button class="btn-proximo" data-proximo="5E">Aproveitar a piscina do hotel</button>
+                <button class="btn-proximo" data-proximo="5F">Pedir o almoço no restaurante do hotel</button>
+            </div>
+            
+            <div class="passo" id="passo-4D">
+                <p>Os salva-vidas chegam para resgatar Renata e o familiar, ambos exaustos pela luta contra a correnteza.</p>
+                <button class="btn-proximo" data-proximo="5A">Descansar na praia</button>
+                <button class="btn-proximo" data-proximo="5F">Seguir para o hotel</button>
+            </div>
+            
+            <div class="passo" id="passo-4E">
+                <p>Renata e o familiar conseguem nadar até a areia, mas estão exaustos.</p>
+                <button class="btn-proximo" data-proximo="5A">Descansar na praia</button>
+                <button class="btn-proximo" data-proximo="5B">Voltar para o acampamento</button>
+            </div>
+            
+            <div class="passo" id="passo-4F">
+                <p>Renata e a família decidem ir ao hotel descansar após o susto.</p>
+                <button class="btn-proximo" data-proximo="5E">Aproveitar a piscina do hotel</button>
+                <button class="btn-proximo" data-proximo="5F">Almoçar no restaurante do hotel</button>
+            </div>
+            
+            <div class="passo" id="passo-5A">
+                <p>Renata e sua família almoçam frutos do mar frescos em uma barraca de praia e aproveitam o clima descontraído.</p>
+                <button class="btn-proximo" data-proximo="6A">Fazer uma caminhada pela orla</button>
+                <button class="btn-proximo" data-proximo="6B">Continuar na barraca</button>
+            </div>
+            
+            <div class="passo" id="passo-5B">
+                <p>A família decide fazer um almoço no acampamento e Renata ajuda a preparar a refeição.</p>
+                <button class="btn-proximo" data-proximo="6C">Comer e descansar na barraca</button>
+                <button class="btn-proximo" data-proximo="6D">Brincar de mímica em família</button>
+            </div>
+            
+            <div class="passo" id="passo-5C">
+                <p>A refeição é simples, mas satisfatória, e a família aproveita o resto da tarde relaxando.</p>
+                <button class="btn-proximo" data-proximo="6E">Jogar frisbee na praia</button>
+                <button class="btn-proximo" data-proximo="6F">Descansar e observar o mar</button>
+            </div>
+            
+            <div class="passo" id="passo-5D">
+                <p>O almoço é um banquete, mas leva bastante tempo para ficar pronto. A família saboreia a refeição elaborada.</p>
+                <button class="btn-proximo" data-proximo="6G">Fazer uma trilha próxima</button>
+                <button class="btn-proximo" data-proximo="6H">Relaxar no acampamento</button>
+            </div>
+            
+            <div class="passo" id="passo-5E">
+                <p>Renata e sua família relaxam na piscina do hotel, aliviados por estarem seguros.</p>
+                <button class="btn-proximo" data-proximo="6I">Relaxar mais no hotel</button>
+                <button class="btn-proximo" data-proximo="6J">Sair para jantar</button>
+            </div>
+            
+            <div class="passo" id="passo-5F">
+                <p>Renata e a família pedem uma refeição deliciosa no restaurante do hotel e passam algumas horas no quarto recuperando as energias.</p>
+                <button class="btn-proximo" data-proximo="6K">Relaxar no hotel</button>
+                <button class="btn-proximo" data-proximo="6L">Planejar o resto do dia</button>
+            </div>
+            
+            <div class="passo" id="passo-6A">
+                <p>Renata e sua família fazem uma caminhada tranquila pela orla, aproveitando o cenário paradisíaco.</p>
+            </div>
+            
+            <div class="passo" id="passo-6B">
+                <p>Renata e a família continuam aproveitando o dia na barraca de praia, relaxando com a brisa do mar.</p>
+            </div>
+            
+            <div class="passo" id="passo-6C">
+                <p>Depois do almoço, Renata e sua família tiram um cochilo no acampamento, descansando do longo dia.</p>
+            </div>
+            
+            <div class="passo" id="passo-6D">
+                <p>A família se diverte em um animado jogo de mímica no acampamento.</p>
+            </div>
+            
+            <div class="passo" id="passo-6E">
+                <p>Renata e a família se divertem jogando frisbee na praia, aproveitando o momento em família.</p>
+            </div>
+            
+            <div class="passo" id="passo-6F">
+                <p>Renata e sua família descansam, apreciando a vista do mar e relaxando após o susto.</p>
+            </div>
+            
+            <div class="passo" id="passo-6G">
+                <p>Renata e a família exploram uma trilha próxima à praia, aproveitando a natureza ao redor.</p>
+            </div>
+            
+            <div class="passo" id="passo-6H">
+                <p>Renata e sua família relaxam no acampamento, curtindo a tranquilidade da tarde.</p>
+            </div>
+            
+            <div class="passo" id="passo-6I">
+                <p>Renata e sua família continuam descansando no hotel, aproveitando o conforto do local.</p>
+            </div>
+            
+            <div class="passo" id="passo-6J">
+                <p>Renata e sua família decidem sair para jantar e terminam o dia de forma agradável e tranquila.</p>
+            </div>
+            
+            <div class="passo" id="passo-6K">
+                <p>Renata e a família relaxam mais um pouco no hotel, aproveitando o descanso merecido.</p>
+            </div>
+            
+            <div class="passo" id="passo-6L">
+                <p>Renata e a família planejam o resto do dia, decidindo entre atividades relaxantes.</p>
+            </div>
+            
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
